@@ -1,0 +1,38 @@
+{
+    "name": "devbuddy/cart",
+    "description": "A simple cart class to handle cart.",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
+        "illuminate/validation": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
+        "illuminate/translation": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^8.0.0",
+        "symfony/var-dumper": "2.7.*@dev"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Devbuddy\\Cart\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Devbuddy\\Cart\\": "src/"
+			
+        }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Devbuddy\\Cart\\Cart\\ServiceProvider"
+        ],
+        "aliases": {
+          "Cart": "Devbuddy\\Cart\\Facades\\CartFacade"
+        }
+      }
+    }
+}

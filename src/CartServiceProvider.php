@@ -15,7 +15,7 @@ class CartServiceProvider extends ServiceProvider
     {
         App::bind('cart', function()
 		{
-			return new Cart();
+			return new Devbuddy\Cart\Cart;
 		});
     }
 

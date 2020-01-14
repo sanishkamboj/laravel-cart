@@ -13,6 +13,16 @@
         "phpunit/phpunit": "^8.0.0",
         "symfony/var-dumper": "2.7.*@dev"
     },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Devbuddy\\Cart\\CartServiceProvider"
+        ],
+        "aliases": {
+          "Cart": "Devbuddy\\Cart\\Facades\\CartFacade"
+        }
+      }
+    },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
@@ -24,15 +34,5 @@
             "Devbuddy\\Cart\\": "src/"
 			
         }
-    },
-    "extra": {
-      "laravel": {
-        "providers": [
-          "Devbuddy\\Cart\\CartServiceProvider"
-        ],
-        "aliases": {
-          "Cart": "Devbuddy\\Cart\\Facades\\CartFacade"
-        }
-      }
     }
 }

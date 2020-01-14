@@ -2,6 +2,14 @@
     "name": "devbuddy/cart",
     "description": "A simple cart class for laravel to build ecommerce websites from scratch. No need of configurations just download and start using it. You can customize the functionality as per your requirements very easily and with no hassle. ",
     "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Dev Buddy",
+            "email": "sanish.kamboj@gmail.com",
+            "role": "lead"
+        }
+    ],
     "require": {
         "php": ">=7.1",
         "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|^6.0",

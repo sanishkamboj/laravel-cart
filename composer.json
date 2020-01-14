@@ -28,7 +28,7 @@
     "extra": {
       "laravel": {
         "providers": [
-          "Devbuddy\\Cart\\Cart\\CartServiceProvider"
+          "Devbuddy\\Cart\\CartServiceProvider"
         ],
         "aliases": {
           "Cart": "Devbuddy\\Cart\\Facades\\CartFacade"
